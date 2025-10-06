@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="main.css">
-        
-        <title>визитка </title>
-    </head>
-    <body>
-        <style>
-body {
-  background-image: url('https://avatars.mds.yandex.net/i?id=1683c232b46a67655c92d50eed3e36d0_l-5220492-images-thumbs&n=13');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-</style>
-        <img src="images/photo_2025-09-21_22-59-18.jpg" width=”90” height=”40”>
-        <div class="bigFlexBox"></div>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>визитка</title>
+</head>
+<body>
+    <br>
+    <h1 class="person_name">Шалыгин Дмитрий Андреевич</h1>
+    <h2 class="group_misis">БИВТ-25-3</h2>
 
-         <br>
-        <h1 class="person_name">Шалыгин Дмитрий Андреевич</h1>
-        <h2>БИВТ-25-3</h2>
-    
-        <a href="https://t.me/D1MND7">Ссылка на мой аккаунт в Telegram</a>
-        <br>
-        <br>
-        <p><b>увлечения </b></p>
-        <li>Автоспорт (F1)</li>
-        <li>одежда(бренды и тд)</li>
-        <li>киберспорт(CS2)</li>
-         <br>
-        <p><b> мои любимые музыкальные исполнители</b></p>
-        <li>9mice</li>
-        <li>Kai Angel</li>
-        <li>madkid</li>
-        <li>Платина</li>
-        <li>FORTUNA812</li>
-        <li>тёмный принц</li>
-        <p><b>Список Хакатонов в которых участвовал</b></p>
-        <li>Vibeton(итог 4 место из 16)</li>
-        <li>Coming soon</li>
-        
-g
-       
-        <br>
-        <br>
-        <a href="https://youtu.be/dQw4w9WgXcQ">важная информация</a>
-    <div class="block">text</div>
-    </body>
+    <div class="buttons-container">
+        <div class="button-wrapper">
+            <input type="checkbox" id="show-text1">
+            <label for="show-text1" class="toggle-button">Увлечения</label>
+            <div class="text-container">
+                <p><b>увлечения </b></p>
+                <ul>
+                    <li>Автоспорт (F1)</li>
+                    <li>Мода( в частности одежда)</li>
+                    <li>киберспорт(CS2)</li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="button-wrapper">
+            <input type="checkbox" id="show-text2">
+            <label for="show-text2" class="toggle-button">Музыка</label>
+            <div class="text-container">
+                <p><b> мои любимые музыкальные исполнители</b></p>
+                <ul> 
+                    <li><a href="https://open.spotify.com/artist/3v0qTkZvuro4johOZyIhOm">9mice</a></li>
+                    <li><a href="https://open.spotify.com/artist/1pxLlPRiWRUBGdSOrVL4f0">Kai Angel</a></li>
+                    <li><a href="https://open.spotify.com/artist/1Q5COYHgA7ch0y3HqCNgwt">madkid</a></li>
+                    <li><a href="https://open.spotify.com/artist/3jayBSUIK2eqnLCWfJoWwV">тёмный принц</a></li>
+                    <li><a href="https://open.spotify.com/artist/4TzGOY9RpErzedN02w8Boh">Платина</a></li>
+                    <li><a href="https://open.spotify.com/artist/4mVClR51ezgcGmBnInzFum">PLOXOYPAREN</a></li>
+                    <li><a href="https://open.spotify.com/artist/4anb8rmk0xipuQP6QZ5IlH">FORTUNA812</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <input type="checkbox" id="show-text3">
+            <label for="show-text3" class="toggle-button">Хакатоны</label>
+            <div class="text-container">
+                <p><b>Хакатоны и их результат</b></p>
+                <ul>
+                     <li>Vibeton(итог 4 место из 16)</li>
+                     <li>Coming soon</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <input type="checkbox" id="show-text4">
+            <label for="show-text4" class="toggle-button">Bio</label>
+            <div class="text-container">
+                <p><b>о себе</b></p>
+                <ul>
+                     <li>Родился и вырос в Москве , закончил инженерный класс , на данный момент учусь в университете НИТУ МИСИС на напрвление БИВТ</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <input type="checkbox" id="show-text5">
+            <label for="show-text5" class="toggle-button">Соцсети</label>
+            <div class="text-container">
+                <p><b>мои соцсети</b></p>
+                <ul>
+                    <li><a href="https://t.me/D1MND7">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <a href="https://youtu.be/dQw4w9WgXcQ" class="important-link">важная информация</a>
+
+    <div class="overlay"></div>
+</body>
 </html>

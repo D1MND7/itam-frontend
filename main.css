@@ -1,29 +1,151 @@
 .person_name {
     color: blue;
-    font-variant: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 40px;
-    font-weight: 60px;
+    font-weight: bold;
+    text-align: center;
 }
-.block{
-    background-image: url(https://static.mk.ru/upload/entities/2024/10/16/19/articles/facebookPicture/fd/ad/9a/18/83af4fc6dd31592ae4173a2c31b92cea.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
-    margin: 20px 50px;
-    padding: 40px 20px;
-    border: 20px black;
-    border: 100px;
+.group_misis {
+    color: rgb(27, 27, 27);
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
-.text{
-    position: absolute;
-    top: 100px;
+body {
+  background-image: url('https://avatars.mds.yandex.net/i?id=1683c232b46a67655c92d50eed3e36d0_l-5220492-images-thumbs&n=13');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 20px;
 }
-.block:hover{
-    width: 300px;
-    transition: case-in-out ;
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-.bigFlexBo{
+
+.button-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.text-container { 
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 500px;
-    height: 500px;
+    max-width: 90%;
+    max-height: 80vh;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    z-index: 1000;
+    color: #333;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#show-text1:checked ~ .text-container,
+#show-text2:checked ~ .text-container,
+#show-text3:checked ~ .text-container,
+#show-text4:checked ~ .text-container,
+#show-text5:checked ~ .text-container { 
+    display: block; 
+}
+
+#show-text1:checked ~ .overlay,
+#show-text2:checked ~ .overlay,
+#show-text3:checked ~ .overlay,
+#show-text4:checked ~ .overlay,
+#show-text5:checked ~ .overlay { 
+    display: block; 
+}
+
+#show-text1,
+#show-text2,
+#show-text3,
+#show-text4,
+#show-text5 { 
+    display: none; 
+}
+
+.toggle-button {
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.toggle-button:hover { 
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Стили для текста */
+.text-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.text-container ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.text-container li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.text-container b {
+    color: #000;
+}
+
+.text-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+}
+
+.important-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.important-link:hover {
+    text-decoration: underline;
 }
